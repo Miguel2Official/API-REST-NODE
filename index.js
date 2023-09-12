@@ -51,7 +51,7 @@ app.delete('/api/empleados/:id', (req, res) => {
     res.sendStatus(204); 
 });
 
-const puerto = process.env.PUERTO || 80;
+const puerto = process.env.PUERTO || 8080;
 app.listen(puerto, () => {
     console.log('Escuchando en el puerto:', puerto);
 });
